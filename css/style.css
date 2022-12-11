@@ -1,4 +1,4 @@
-/* Botones Icono */
+/*Navbar*/
 
 .icon {
     background-color: white;
@@ -31,6 +31,12 @@
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png);
 }
 
+/*Header*/
+
+header img{
+    max-height: 40em !important;
+    }
+
 
 /* Configuracion de Responsividad */
 
@@ -51,11 +57,15 @@
         margin-left: 12em;
     }
 
-
 }
 
 @media (max-width: 416px) {
     #search_bar {
         width: 6em;
     }
+
+    #carouselExampleIndicators{
+        display: none;
+    }
+
 }
