@@ -1,5 +1,9 @@
 /*Navbar*/
 
+nav a {
+    color: rgb(177, 20, 20) !important;
+}
+
 .icon {
     background-color: white;
     padding: 17px;
@@ -10,6 +14,7 @@
 
 .icon:hover {
     opacity: 0.4;
+    background-color: rgb(177, 20, 20);
 }
 
 #guitar_icon {
@@ -33,13 +38,26 @@
 
 /*Header*/
 
-header img{
+header img {
     max-height: 40em !important;
-    }
+}
 
+header video {
+    max-height: 40em !important;
+    background-color: black;
+}
+
+
+#logo-slide img {
+    background-color: aliceblue;
+    width: 15em;
+    opacity: 0.5;
+}
 
 /* Configuracion de Responsividad */
 
+
+/* Pantalla de ordenador */
 @media (min-width: 1024px) {
     nav div {
         margin-left: 2em !important;
@@ -57,15 +75,38 @@ header img{
         margin-left: 12em;
     }
 
+    .carousel-caption h3, .carousel-caption p{
+        color: white;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
 }
 
+/* Pantalla de tablet */
+@media (max-width: 1180px) {
+    #search_bar {
+        width: 6em;
+    }
+
+    header video {
+        max-height: 355px !important;
+    }
+
+    header img {
+        max-height: 355px !important;
+    }
+}
+
+/* Pantalla de móvil */
 @media (max-width: 416px) {
     #search_bar {
         width: 6em;
     }
 
-    #carouselExampleIndicators{
-        display: none;
+    header video {
+        max-height: 162px !important;
     }
 
+    header img {
+        max-height: 162px !important;
+    }
 }
