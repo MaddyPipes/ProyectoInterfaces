@@ -39,11 +39,11 @@ nav a {
 /*Header*/
 
 header img {
-    max-height: 40em !important;
+    max-height: 33em !important;
 }
 
 header video {
-    max-height: 40em !important;
+    max-height: 33em !important;
     background-color: black;
 }
 
@@ -52,6 +52,10 @@ header video {
     background-color: aliceblue;
     width: 15em;
     opacity: 0.5;
+}
+
+#caption-slide{
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Configuracion de Responsividad */
