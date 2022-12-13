@@ -154,6 +154,60 @@ main a {
 
 /* Destacados */
 
+.featured {
+    max-width: 30%;
+    box-shadow: 0 4px 30px -12px rgba(0, 0, 0, 0.66);
+    border-radius: 50px;
+    margin: 2%;
+}
+
+.featured_img {
+    display: flex;
+    justify-content: center;
+}
+
+.featured_img img {
+    max-height: 20em;
+}
+
+.featured_text {
+    padding-right: 0px !important;
+    text-align: right;
+}
+
+
+.featured_decoration {
+    width: 100%;
+    height: 4em;
+    border-radius: 0 50px 0 0;
+    background-size: cover;
+    background-position: left;
+    background-image: url(https://wallpapercave.com/wp/VEe7Pk8.jpg);
+}
+
+.featured_title {
+    text-align: center;
+    margin: 2.5rem 0 1rem 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.featured_prize {
+    color: rgb(135, 15, 15);
+    padding-right: 15%;
+}
+
+.featured_button {
+    background-color: white;
+    margin-right: 15%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.featured_button:hover {
+    font-family: 'deftones';
+    color: rgb(177, 20, 20);
+    border-color: rgb(177, 20, 20);
+    box-shadow: 0px 5px 10px 0px rgb(135, 15, 15);
+}
 
 /* <------------- Configuracion de Responsividad ----------------> */
 
@@ -191,31 +245,70 @@ main a {
     header img {
         max-height: 355px !important;
     }
-}
 
-/* Pantalla de móvil */
-@media (max-width: 416px) {
-    #search_bar {
-        width: 6em;
+    .featured {
+        max-width: 60%;
     }
 
-    header video {
-        max-height: 162px !important;
-    }
+    /* Pantalla de móvil */
+    @media (max-width: 416px) {
+        #search_bar {
+            width: 6em;
+        }
 
-    header img {
-        max-height: 162px !important;
-    }
+        header video {
+            max-height: 162px !important;
+        }
 
-    #sections-main .menu img {
-        width: 2.2em;
-    }
+        header img {
+            max-height: 162px !important;
+        }
 
-    #sections-main .menu h5 {
-        font-size: 10px;
-    }
+        #sections-main .menu img {
+            width: 2.2em;
+        }
 
-    main h1 {
-        font-size: 2em;
+        #sections-main .menu h5 {
+            font-size: 10px;
+        }
+
+        main h1 {
+            font-size: 2em;
+        }
+
+        .featured {
+            max-width: 60%;
+            max-height: 10em;
+        }
+
+        .featured_text {
+            text-align: left;
+        }
+
+        .featured_img img {
+            max-height: 10em;
+        }
+
+        .featured_decoration {
+            width: 100%;
+            height: 2.5em;
+        }
+
+        .featured_title {
+            margin: 0.3rem 0 0.5rem 1rem;
+            font-size: small;
+        }
+        
+        .featured_prize {   
+            font-size: 1.5em;
+            margin-bottom: 0px;
+        }
+        
+        .featured_button {
+            width: 60px;
+            height: 2em;
+            font-size: 9px;
+            margin-bottom: 6px;
+        }
     }
 }
