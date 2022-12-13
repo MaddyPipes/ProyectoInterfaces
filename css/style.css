@@ -15,7 +15,6 @@
     src: url('../rsc/deftone-stylus/deftone\ stylus.ttf');
 }
 
-
 /*Navbar*/
 
 nav a {
@@ -156,7 +155,7 @@ main a {
 
 .featured {
     max-width: 30%;
-    box-shadow: 0 4px 30px -12px rgba(0, 0, 0, 0.66);
+    box-shadow: 0 5px 30px -12px rgba(0, 0, 0, 0.66);
     border-radius: 50px;
     margin: 2%;
 }
@@ -164,6 +163,10 @@ main a {
 .featured_img {
     display: flex;
     justify-content: center;
+    border-radius: 50px 0 0 50px;
+    background-image: url(../rsc/bodycover.jpg);
+    background-size: 350px;
+    background-position: right;
 }
 
 .featured_img img {
@@ -172,6 +175,7 @@ main a {
 
 .featured_text {
     padding-right: 0px !important;
+    padding-left: 0px !important;
     text-align: right;
 }
 
@@ -187,7 +191,7 @@ main a {
 
 .featured_title {
     text-align: center;
-    margin: 2.5rem 0 1rem 3rem;
+    margin: 2.5rem 2rem 1rem 3rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -207,6 +211,12 @@ main a {
     color: rgb(177, 20, 20);
     border-color: rgb(177, 20, 20);
     box-shadow: 0px 5px 10px 0px rgb(135, 15, 15);
+}
+
+#featured-carousel .carousel-control-prev, #featured-carousel .carousel-control-next{
+    border-bottom: 0;
+    font-size: 3em;
+    color: rgb(177, 20, 20);
 }
 
 /* <------------- Configuracion de Responsividad ----------------> */
@@ -298,12 +308,12 @@ main a {
             margin: 0.3rem 0 0.5rem 1rem;
             font-size: small;
         }
-        
-        .featured_prize {   
+
+        .featured_prize {
             font-size: 1.5em;
             margin-bottom: 0px;
         }
-        
+
         .featured_button {
             width: 60px;
             height: 2em;
