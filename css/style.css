@@ -19,6 +19,7 @@
 
 nav a {
     color: rgb(177, 20, 20) !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .icon {
@@ -154,15 +155,16 @@ main a {
 /* Destacados */
 
 .featured {
-    max-width: 30%;
-    box-shadow: 0 5px 30px -12px rgba(0, 0, 0, 0.66);
+    max-width: 40%;
+    box-shadow: 0 5px 30px -12px rgba(0, 0, 0, 1);
     border-radius: 50px;
     margin: 2%;
 }
 
 .featured_img {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    height: 21em;
     border-radius: 50px 0 0 50px;
     background-image: url(../rsc/bodycover.jpg);
     background-size: 350px;
@@ -171,6 +173,7 @@ main a {
 
 .featured_img img {
     max-height: 20em;
+    max-width: 18.5em;
 }
 
 .featured_text {
@@ -240,6 +243,13 @@ main a {
         margin-left: 12em;
     }
 
+    .carousel-control-prev {
+        margin-left: 20%;
+    }
+
+    .carousel-control-next {
+        margin-right: 20%;
+    }
 }
 
 /* Pantalla de tablet */
@@ -295,8 +305,12 @@ main a {
             text-align: left;
         }
 
-        .featured_img img {
+        .featured_img {
             max-height: 10em;
+        }
+
+        .featured_img img {
+            max-height: 9em;
         }
 
         .featured_decoration {
@@ -312,6 +326,7 @@ main a {
         .featured_prize {
             font-size: 1.5em;
             margin-bottom: 0px;
+            margin-left: 10px;
         }
 
         .featured_button {
@@ -319,6 +334,7 @@ main a {
             height: 2em;
             font-size: 9px;
             margin-bottom: 6px;
+            margin-left: 10px;
         }
     }
 }
