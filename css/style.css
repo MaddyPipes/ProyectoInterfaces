@@ -15,6 +15,27 @@
     src: url('../rsc/deftone-stylus/deftone\ stylus.ttf');
 }
 
+/*<--------------------General---------------->*/
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(135, 15, 15);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(177, 20, 20);
+  }
+
 /*Navbar*/
 
 nav a {
@@ -220,6 +241,34 @@ main a {
     border-bottom: 0;
     font-size: 3em;
     color: rgb(177, 20, 20);
+}
+
+/* Catálogo */
+
+::-webkit-scrollbar-track {
+    background-image: url(../rsc/bodycover.jpg);
+    background-size: 50px;
+  }
+
+.catalog_container {
+    display: flex;
+    max-width: 80% !important;
+    max-height: 60em !important;
+    border-radius: 20px;
+    margin: 2em;
+    padding: 1em 0;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    /* background-image: url(https://img.freepik.com/vector-gratis/fondo-dia-mundial-rock-dibujado-mano_23-2149445205.jpg); */
+}
+
+.catalog_item {
+    background-color: white;
+    width: 18em;
+    height: 18em;
+    box-shadow: 0 5px 30px -12px rgba(0, 0, 0, 1);
+    border-radius: 50px;
 }
 
 /* <------------- Configuracion de Responsividad ----------------> */
