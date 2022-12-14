@@ -17,24 +17,37 @@
 
 /*<--------------------General---------------->*/
 
+/* Scroll */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background-image: url(../rsc/bodycover.jpg);
     background-size: 50px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: rgb(135, 15, 15);
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(177, 20, 20);
+}
+
+/* Offcanvas */
+
+#offcanvas ul{
+    list-style: none;
+}
+
+#offcanvas h1{
+    text-align: center;
+}
+
+#offcanvas form{
+    justify-content:center;
 }
 
 /*Navbar*/
@@ -76,7 +89,9 @@ nav a {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png);
 }
 
-/*Header*/
+/*<---------Header---------->*/
+
+/* Carrusel */
 
 header img {
     max-height: 29em !important;
@@ -268,77 +283,76 @@ main a {
     border-radius: 50px;
 }
 
-.catalog_item{
+.catalog_item {
     position: relative;
     width: 300px;
     height: 350px;
     background: #fff;
     border-radius: 4px;
-    box-shadow:0 2px 10px rgba(0,0,0,.2);
-  }
-  .catalog_item:before,
-  .catalog_item:after
-  {
-        position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+
+.catalog_item:before,
+.catalog_item:after {
+    position: relative;
     width: 300px;
     height: 350px;
     background: #fff;
     border-radius: 4px;
-    box-shadow:0 2px 10px rgba(0,0,0,.2);
-    
-  }
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
 
-  .catalog_item .imgBx{
-     bottom: 80px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  bottom: 10px;
-  right: 10px;
-  background: #222;
-  transition: 0.5s;
-  z-index: 1;
-  }
-  
-  .catalog_item:not(:hover) .imgBx
-  {
+}
+
+.catalog_item .imgBx {
     bottom: 80px;
-  }
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #222;
+    transition: 0.5s;
+    z-index: 1;
+}
 
-  .catalog_item .imgBx img{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  }
+.catalog_item:not(:hover) .imgBx {
+    bottom: 80px;
+}
 
-  .catalog_item .details{
-      position: absolute;
-      left: 10px;
-      right: 10px;
-      bottom: 10px;
-      height: 60px;
-      text-align: center;
-  }
+.catalog_item .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-  .catalog_item .details h2{
-   margin: 0;
-   padding: 0;
-   font-weight: 600;
-   font-size: 20px;
-   color: #777;
-   text-transform: uppercase;
-  } 
+.catalog_item .details {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+}
 
-  .catalog_item .details h2 span{
-   font-weight: bold;
-  font-size: 16px;
-  color: rgb(177, 20, 20);
-  display: block;
-  margin-top: 5px;
-   } 
+.catalog_item .details h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.catalog_item .details h2 span {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(177, 20, 20);
+    display: block;
+    margin-top: 5px;
+}
 
 /* <------------- Configuracion de Responsividad ----------------> */
 
@@ -480,6 +494,12 @@ main a {
             border-radius: 10px;
             width: 5em;
             height: 5em;
+        }
+
+
+
+        footer {
+            font-size: small;
         }
     }
 }
