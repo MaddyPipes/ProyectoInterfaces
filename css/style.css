@@ -319,20 +319,24 @@ main a {
 }
 
 .catalog_button {
+    z-index: -1;
+    margin: 10px;
+}
+.catalog_item:hover .catalog_button  {
     background-color: white;
     margin-right: 15%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    z-index: -1;
     position: relative;
+    z-index: 2;
 }
-.catalog_item:hover .catalog_button  {
+
+.catalog_button:hover  {
     font-family: 'deftones';
     color: rgb(177, 20, 20);
     border-color: rgb(177, 20, 20);
     box-shadow: 0px 5px 10px 0px rgb(135, 15, 15);
     z-index: 2;
 }
-
 .catalog_item:not(:hover) .imgBx {
     bottom: 80px;
 }
@@ -417,9 +421,11 @@ main a {
     }
 
     .catalog_item {
-        width: 11em;
-        height: 11em;
+        width: 15em;
+        height: 17em;
     }
+
+    
 
     /* Pantalla de móvil */
     @media (max-width: 416px) {
@@ -506,10 +512,14 @@ main a {
 
         .catalog_item {
             border-radius: 10px;
-            width: 5em;
-            height: 5em;
+            width: 8em;
+            height: 10em;
         }
 
+
+        .details{
+            font-size: 1.5em;
+        }
 
 
         footer {
