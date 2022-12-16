@@ -1,10 +1,25 @@
-/* Plantilla de estilos obtenida de codepen, editadas las clases pertinentes a la validación */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+/* Fuentes */
+
+@font-face {
+    font-family: 'jimyreid';
+    src: url('../rsc/sex_pistols/Sex_Pistols.ttf');
+}
+
+@font-face {
+    font-family: 'rubik';
+    src: url('../rsc/Rubik_80s_Fade/Rubik80sFade-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'deftones';
+    src: url('../rsc/deftone-stylus/deftone\ stylus.ttf');
+}
+
 
 *,
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -14,7 +29,7 @@ body {
 html,
 body {
     height: 100%;
-    background-color: #152733;
+    background-color: #23333d;
     overflow: hidden;
 }
 
@@ -29,6 +44,7 @@ body {
 }
 
 .form-holder .form-content {
+    background-image: url(https://wallpapercave.com/wp/VEe7Pk8.jpg);
     position: relative;
     text-align: center;
     display: -webkit-box;
@@ -41,10 +57,13 @@ body {
     -webkit-align-items: center;
     align-items: center;
     padding: 60px;
+    border-radius: 10px;
 }
 
 .form-content .form-items {
-    border: 3px solid #fff;
+    border: 3px solid rgb(135, 15, 15);
+    background-color: white;
+    color: black;
     padding: 40px;
     display: inline-block;
     width: 100%;
@@ -57,8 +76,15 @@ body {
     transition: all 0.4s ease;
 }
 
+.form-content .form-items img {
+    margin-left: 20%;
+    margin-bottom: 5%;
+    width: 50%;
+}
+
 .form-content h3 {
-    color: #fff;
+    font-family: 'deftones';
+    color: rgb(135, 15, 15);
     text-align: left;
     font-size: 28px;
     font-weight: 600;
@@ -70,7 +96,7 @@ body {
 }
 
 .form-content p {
-    color: #fff;
+    color: black;
     text-align: left;
     font-size: 17px;
     font-weight: 300;
@@ -82,7 +108,7 @@ body {
 .form-content label,
 .was-validated .form-check-input:invalid~.form-check-label,
 .was-validated .form-check-input:valid~.form-check-label {
-    color: #fff;
+    color: bla;
 }
 
 .form-content input[type=text],
@@ -91,10 +117,11 @@ body {
 .form-content input[type=number],
 #catcha,
 .form-content select {
+    border: 0.5px double rgb(135, 15, 15);
+    box-shadow: 0 5px 30px -12px rgba(0, 0, 0, 1);
     width: 100%;
     padding: 9px 20px;
     text-align: left;
-    border: 0;
     outline: 0;
     border-radius: 6px;
     background-color: #fff;
@@ -108,16 +135,20 @@ body {
 
 
 .btn-primary {
-    background-color: #6C757D;
+    background-color: rgb(135, 15, 15);
     outline: none;
     border: 0px;
     box-shadow: none;
 }
 
+.btn-primary:disabled {
+    background-color: black;
+}
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background-color: #495056;
+    background-color: rgb(177, 20, 20);
     outline: none !important;
     border: none !important;
     box-shadow: none;
@@ -162,12 +193,16 @@ body {
     color: #2acc80;
 }
 
-/* Estilos específicos al ejercicio */
-
 .invalid-feedback-2 {
     color: #ff606e;
 }
 
 .hidden{
     display: none;
+}
+
+@media (max-width: 416px) {
+    .form-items {
+        width: 20% !important;
+    }
 }
