@@ -2,8 +2,10 @@
 //del que se trate. Por defecto no hará falta añadir nada más a texto o email, ya que sus validaciones estándar son las que se piden en el ejercicio.
 
 (function () {
-
-    array_forms.forEach(function (form) {
+    'use strict'
+    const forms = document.querySelectorAll('.requires-validation')
+    Array.from(forms)
+      .forEach(function (form) {
         form.addEventListener('submit', function (e) {
             //Las funciones se harán usando la biblioteca específica para formularios "form", usando el método checkValidity(), que hará las comprobaciones por defecto de
             //cada tipo de input y, en caso de que no las valide, mostrará el contenido de las labels del HTML de "invalid-feedback".
