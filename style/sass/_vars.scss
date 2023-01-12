@@ -2,7 +2,7 @@ $light-red: rgb(177, 20, 20);
 
 $dark-red: rgb(135, 15, 15);
 
-$square-bg: url(../rsc/bodycover.jpg);
+$square-bg: url(../../rsc/bodycover.jpg);
 
 $deftones: 'deftones', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -16,12 +16,12 @@ $jimmireid: 'jimyreid', 'Courier New', Courier, monospace;
 
 @font-face {
     font-family: 'jimyreid';
-    src: url('../rsc/sex_pistols/Sex_Pistols.ttf');
+    src: url('../../rsc/sex_pistols/Sex_Pistols.ttf');
 }
 
 @font-face {
     font-family: 'rubik';
-    src: url('../rsc/Rubik_80s_Fade/Rubik80sFade-Regular.ttf');
+    src: url('../../rsc/Rubik_80s_Fade/Rubik80sFade-Regular.ttf');
 }
 
 @font-face {
