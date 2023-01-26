@@ -15,7 +15,9 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-light sticky-top">
     <div class="container-fluid">
-      <a class="nav-link" href="./index.html"><img src="./rsc/logo-dark.png" alt="" style="height:40px ;"></a>
+      <a class="nav-link" href="./index.html">
+        <img src="./rsc/logo-dark.png" alt="" style="height:40px ;">
+      </a>
       <form class="d-flex" role="search">
         <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
           aria-describedby="search-addon" id="search_bar" />
@@ -103,7 +105,20 @@
           </video>
         </div>
         <div class="carousel-item">
-          <a href=""><img src="./rsc/stratocaster.jpg" class="d-block w-100 img-fluid" alt="..."></a>
+          <a href="">
+
+            <!-- Ejemplo de inserción de una imagen mediante el uso de <picture> -->
+
+            <picture>
+              
+              <source media="(min-width: 1024px)" srcset="./rsc/stratocaster-highres.webp">
+              <source media="(orientation: landscape)" srcset="./rsc/stratocaster.jpg">
+              <source media="handheld" srcset="./rsc/stratocaster.jpg">
+              <source srcset="./rsc/stratocaster-highres.webp" type="image/webp">
+              
+              <img src="./rsc/stratocaster.jpg" class="d-block w-100 img-fluid" alt="...">
+            </picture>
+          </a>
           <div class="carousel-caption d-md-block">
             <div id="caption-slide">
               <h2>Nuestra selección</h2>
@@ -131,6 +146,9 @@
   </header>
 
   <main>
+
+    <!-- Todos los iconos han sido creados mediante edición con GIMP, 
+    en la carpeta rsc se encuentran también las imágenes originales -->
 
     <div class="container-fluid" id="sections-main">
       <div class="row">
