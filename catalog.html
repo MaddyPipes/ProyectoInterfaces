@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./style/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -85,14 +85,72 @@
   </nav>
 
   <header>
- 
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href=""><img src="./rsc/carrousell-percusion1.jpg" class="d-block w-100 img-fluid" alt="..."></a>
+            <div class="carousel-caption d-md-block">
+              <div id="caption-slide">
+                <h2>¿Buscas una ganga?</h2>
+              </div>
+            </div>
+          </div>
+        <div class="carousel-item">
+          <a href="">
+
+            <!-- Ejemplo de inserción de una imagen mediante el uso de <picture> -->
+
+            <picture>
+
+              <source media="(min-width: 1024px)" srcset="./rsc/stratocaster-highres.webp">
+              <source media="(orientation: landscape)" srcset="./rsc/stratocaster.jpg">
+              <source media="handheld" srcset="./rsc/stratocaster.jpg">
+              <source srcset="./rsc/stratocaster-highres.webp" type="image/webp">
+
+              <img src="./rsc/stratocaster.jpg" class="d-block w-100 img-fluid" alt="...">
+            </picture>
+          </a>
+          <div class="carousel-caption d-md-block">
+            <div id="caption-slide">
+              <h2>Nuestra selección</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href=""><img src="./rsc/tama.jpg" class="d-block w-100 img-fluid" alt="..."></a>
+          <div class="carousel-caption d-md-block">
+            <div id="caption-slide">
+              <h2>¿Buscas una ganga?</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href=""><img src="./rsc/16287-bassman-history-Hero.jpg" class="d-block w-100 img-fluid" alt="..."></a>
+          <div class="carousel-caption d-md-block">
+            <div id="caption-slide">
+              <h2>Los clásicos nunca mueren</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main>
 
     <div class="container-fluid" id="sections-main">
       <div class="row">
-        <h1 style="text-align: center;">SUBCATEGORIAS</h1>
+        <h1 style="text-align: center;">OTRAS CATEGORIAS</h1>
         <ul class="menu" data-animation="to-right">
           <li>
             <a href="#0">
