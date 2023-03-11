@@ -14,83 +14,80 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-light sticky-top">
-      <div class="container-fluid">
-        <a class="nav-link" href="./index.html">
-          <img src="./rsc/logo-dark.png" alt="" style="height:40px ;">
-        </a>
-        <form class="d-flex" role="search">
-          <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-            aria-describedby="search-addon" id="search_bar" />
-          <span class="input-group-text border-0" id="search-addon">
-            <i class="bi bi-search"></i>
-          </span>
-        </form>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><b>Inicio</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact_footer"><b>Contacto</b></a>
-            </li>
-            <li class="nav-item">
-              
-            </li>
+<!-- nav -->
+<nav class="navbar navbar-expand-lg bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="nav-link" href="./index.html">
+      <img src="./rsc/logo-dark.png" alt="" style="height:40px ;">
+    </a>
+    <form class="d-flex" role="search">
+      <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+        aria-describedby="search-addon" id="search_bar" />
+      <span class="input-group-text border-0" id="search-addon">
+        <i class="bi bi-search"></i>
+      </span>
+    </form>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><b>Inicio</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact_footer"><b>Contacto</b></a>
+        </li>
+        <li class="nav-item">
+          
+        </li>
+      </ul>
+      <div class="d-flex mx-lg-5">
+        <div class="nav-item dropdown mx-lg-2">
+          <button class="icon" id="guitar_icon" data-bs-toggle="dropdown" aria-expanded="false" title="Menú Productos"></button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" data-bs-toggle="offcanvas" href="#offcanvas">Catálogo</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="catalogSection.html">Ofertas</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="catalogSection.html">Ocasión</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="catalogSection.html">Reacondicionados</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="second_hand_form.html">¿Quieres vender?</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="#contact_footer">Sobre Nosotros</a></li>
           </ul>
-          <div class="d-flex mx-lg-5">
-            <div class="nav-item dropdown mx-lg-2">
-              <button class="icon" id="guitar_icon" data-bs-toggle="dropdown" aria-expanded="false" title="Menú Productos"></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" data-bs-toggle="offcanvas" href="#offcanvas">Catálogo</a></li>
-                <hr class="dropdown-divider">
-                <li><a class="dropdown-item" href="#">Ofertas</a></li>
-                <hr class="dropdown-divider">
-                <li><a class="dropdown-item" href="#">Ocasión</a></li>
-                <hr class="dropdown-divider">
-                <li><a class="dropdown-item" href="#">Reacondicionados</a></li>
-                <hr class="dropdown-divider">
-                <li><a class="dropdown-item" href="#">¿Quieres vender?</a></li>
-                <hr class="dropdown-divider">
-                <li><a class="dropdown-item" href="#">Sobre Nosotros</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown mx-lg-2">
-              <button class="icon" id="user_icon" data-bs-toggle="dropdown" aria-expanded="false" title="Menú Usuario"></button>
-              <ul class="dropdown-menu">
-                <!-- Habilitar login -->
-                <li><a class="dropdown-item" href="./register_form.html">Mi Usuario</a></li>
-                <hr class="dropdown-divider">
-                <li><a class="dropdown-item" href="#">Mis Productos</a></li>
-                <hr class="dropdown-divider">
-                <li><a class="dropdown-item" href="#">Mis Pedidos</a></li>
-                <hr class="dropdown-divider">
-                <li><a class="dropdown-item" href="#">Configuración</a></li>
-                <hr class="dropdown-divider">
-                <li><a class="dropdown-item" href="#">Cambiar Usuario</a></li>
-                <hr class="dropdown-divider">
-                <li><a class="dropdown-item" href="#">Desconectar</a></li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown mx-lg-2">
-              <button class="icon" id="cart_icon" data-bs-toggle="dropdown" aria-expanded="false" title="Menú Carrito"></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Ver Cesta</a></li>
-                <hr class="dropdown-divider">
-                <li><a class="dropdown-item" href="#">Vaciar Cesta</a></li>
-              </ul>
-            </div>
-          </div>
-          <div id="google_translate_element" class="google"></div>
+        </div>
+        <div class="nav-item dropdown mx-lg-2">
+          <button class="icon" id="user_icon" data-bs-toggle="dropdown" aria-expanded="false" title="Menú Usuario"></button>
+          <ul class="dropdown-menu">
+            <!-- Habilitar login -->
+            <li><a class="dropdown-item" href="user.html">Mi Usuario</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="#">Mis Productos</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="#">Mis Pedidos</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="#">Desconectar</a></li>
+          </ul>
+        </div>
+        <div class="nav-item dropdown mx-lg-2">
+          <button class="icon" id="cart_icon" data-bs-toggle="dropdown" aria-expanded="false" title="Menú Carrito"></button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="cart.html">Ver Cesta</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="#">Vaciar Cesta</a></li>
+          </ul>
         </div>
       </div>
-    </nav>
+      <div id="google_translate_element" class="google"></div>
+    </div>
+  </div>
+</nav>
     <header>
       <!-- place navbar here -->
     </header>
@@ -584,9 +581,9 @@
     </div>
   </footer>
 
-  <!-- OFFCANVA -->
+   <!-- OFFCANVA -->
 
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
+   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
@@ -595,9 +592,7 @@
         <ul class="menu" data-animation="to-left">
           <li>
 
-            <!-- Relentizar movimientos de iconos  -->
-
-            <a href="#0">
+            <a href="productView.html">
 
               <span>
                 <img src="./rsc/icon-drum.png" alt="">
@@ -609,7 +604,7 @@
           </li>
 
           <li>
-            <a href="#0">
+            <a href="catalogSection.html">
 
               <span>
                 <img src="./rsc/icon-guitar.png" alt="">
@@ -621,7 +616,7 @@
           </li>
 
           <li>
-            <a href="#0">
+            <a href="catalogSection.html">
 
               <span>
                 <img src="./rsc/icon-saxophone.png" alt="">
@@ -633,7 +628,7 @@
           </li>
 
           <li>
-            <a href="#0">
+            <a href="catalogSection.html">
 
               <span>
                 <img src="./rsc/icon-piano.png" alt="">
@@ -645,7 +640,7 @@
           </li>
 
           <li>
-            <a href="#0">
+            <a href="catalogSection.html">
 
               <span>
                 <img src="./rsc/icon-microphone.png" alt="">
@@ -657,7 +652,7 @@
           </li>
 
           <li>
-            <a href="#0">
+            <a href="catalogSection.html">
 
               <span>
                 <img src="./rsc/icon-second-hand.png" alt="">

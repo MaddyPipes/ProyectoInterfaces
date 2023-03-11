@@ -1,42 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      img {
-        max-width: 300px;
-      }
 
-      .primero:hover {
-        -webkit-transform: rotateY(180deg);
-        -webkit-transform-style: preserve-3d;
-        transform: rotateY(180deg);
-        transform-style: preserve-3d;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    img {
+      width: 300px;
+    }
 
-      .segundo:hover {
-        border-radius:50%;
-        -webkit-border-radius:50%;
-        box-shadow: 0px 0px 15px 15px #ec731e;
-        -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
-        transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-      }
-      .tercero:hover{-webkit-transform:scale(1.3);transform:scale(1.3);}
-      .contenedor {overflow:hidden;}
-    </style>
-  </head>
-  <body>
-    <h1>Alejandro</h1>
+    .width {
+      width: 300px;
+      transition: width 2s;
+    }
 
-    <h1>Manuel</h1>
-    <img class="primero" src="./transiciones/waifu.png" alt="" />
-    <img class="segundo" src="./transiciones/waifu.png" alt="" />
-    <img class="tercero" src="./transiciones/waifu.png" alt="" />
+    .width:hover {
+      width: 400px;
+    }
+
+    .filter {
+      filter: none;
+      transition: filter 7s;
+    }
+
+    .filter:hover {
+      filter: sepia(100%);
+    }
+
+    .glowing-border {
+      border: none;
+      border-radius: none;
+      transition: border 7s;
+      transition: border-radius 7s;
+      transition: box-shadow 2s;
+    }
+
+    .glowing-border:hover {
+      border-radius: 10px;
+      border-color: #9ecaed;
+      box-shadow: 0 0 100px #969e69;
+    }
 
 
-  </body>
+
+    .primero:hover {
+      -webkit-transform: rotateY(180deg);
+      -webkit-transform-style: preserve-3d;
+      transform: rotateY(180deg);
+      transform-style: preserve-3d;
+    }
+
+    .segundo:hover {
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      box-shadow: 0px 0px 15px 15px #ec731e;
+      -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+    }
+
+    .tercero:hover {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+
+    .contenedor {
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Alejandro</h1>
+  <img class="width" src="./transiciones/michi.jpg" alt="" />
+  <img class="filter" src="./transiciones/michi.jpg" alt="" />
+  <img class="glowing-border" src="./transiciones/michi.jpg" alt="" />
+
+  <h1>Manuel</h1>
+  <img class="primero" src="./transiciones/waifu.png" alt="" />
+  <img class="segundo" src="./transiciones/waifu.png" alt="" />
+  <img class="tercero" src="./transiciones/waifu.png" alt="" />
+
+
+</body>
+
 </html>
