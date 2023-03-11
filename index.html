@@ -14,6 +14,7 @@
 
 <body>
 
+  <!-- nav -->
   <nav class="navbar navbar-expand-lg bg-light sticky-top">
     <div class="container-fluid">
       <a class="nav-link" href="./index.html">
@@ -65,7 +66,7 @@
             <button class="icon" id="user_icon" data-bs-toggle="dropdown" aria-expanded="false" title="Menú Usuario"></button>
             <ul class="dropdown-menu">
               <!-- Habilitar login -->
-              <li><a class="dropdown-item" href="./register_form.html">Mi Usuario</a></li>
+              <li><a class="dropdown-item" href="user.html">Mi Usuario</a></li>
               <hr class="dropdown-divider">
               <li><a class="dropdown-item" href="#">Mis Productos</a></li>
               <hr class="dropdown-divider">
@@ -81,7 +82,7 @@
           <div class="nav-item dropdown mx-lg-2">
             <button class="icon" id="cart_icon" data-bs-toggle="dropdown" aria-expanded="false" title="Menú Carrito"></button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Ver Cesta</a></li>
+              <li><a class="dropdown-item" href="cart.html">Ver Cesta</a></li>
               <hr class="dropdown-divider">
               <li><a class="dropdown-item" href="#">Vaciar Cesta</a></li>
             </ul>
@@ -93,6 +94,7 @@
   </nav>
 
   <header>
+    <!-- Carousel -->
     <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -159,12 +161,13 @@
     <!-- Todos los iconos han sido creados mediante edición con GIMP, 
     en la carpeta rsc se encuentran también las imágenes originales -->
 
+    <!-- secciones -->
     <div class="container-fluid" id="sections-main">
       <div class="row">
         <h1 style="text-align: center;">sEccIONEs</h1>
         <ul class="menu" data-animation="to-right">
           <li>
-            <a href="#0">
+            <a href="catalogSection.html">
 
               <span>
                 <img src="./rsc/icon-drum.png" alt="">
@@ -176,7 +179,7 @@
           </li>
 
           <li>
-            <a href="#0">
+            <a href="catalogSection.html">
 
               <span>
                 <img src="./rsc/icon-guitar.png" alt="">
@@ -188,7 +191,7 @@
           </li>
 
           <li>
-            <a href="#0">
+            <a href="catalogSection.html">
 
               <span>
                 <img src="./rsc/icon-saxophone.png" alt="">
@@ -200,7 +203,7 @@
           </li>
 
           <li>
-            <a href="#0">
+            <a href="catalogSection.html">
 
               <span>
                 <img src="./rsc/icon-piano.png" alt="">
@@ -212,7 +215,7 @@
           </li>
 
           <li>
-            <a href="#0">
+            <a href="catalogSection.html">
 
               <span>
                 <img src="./rsc/icon-microphone.png" alt="">
@@ -224,7 +227,7 @@
           </li>
 
           <li>
-            <a href="#0">
+            <a href="catalogSection.html">
 
               <span>
                 <img src="./rsc/icon-second-hand.png" alt="">
@@ -240,6 +243,8 @@
     </div>
 
     <article>
+
+      <!-- Destacados  -->
       <h1 style="text-align: center;">DEsTAcADOs</h1>
 
       <div id="featured-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -248,7 +253,7 @@
             <div class="container-fluid featured">
               <section class="row">
                 <div class="col-6 featured_img">
-                  <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Gibson_LP_Classic.png"
+                  <a href="productView.html"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Gibson_LP_Classic.png"
                       alt=""></a>
                 </div>
                 <div class="col-6 featured_text">
@@ -264,7 +269,7 @@
             <div class="container-fluid featured">
               <section class="row">
                 <div class="col-6 featured_img">
-                  <a href=""><img src="https://assets.stickpng.com/images/5afac6086554160a79bea115.png" alt=""></a>
+                  <a href="productView.html"><img src="https://assets.stickpng.com/images/5afac6086554160a79bea115.png" alt=""></a>
                 </div>
                 <div class="col-6 featured_text">
                   <div class="featured_decoration"></div>
@@ -279,7 +284,7 @@
             <div class="container-fluid featured">
               <section class="row">
                 <div class="col-6 featured_img">
-                  <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png"
+                  <a href="productView.html"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png"
                       alt="Guitarra fender jazz bass 70s"></a>
                 </div>
                 <div class="col-6 featured_text">
@@ -303,12 +308,14 @@
     </article>
 
     <article id="catalog">
+
+      <!-- muestrario  -->
       <h1 style="text-align: center;">MUesTRARIo</h1>
 
       <div class="container catalog_container overflow-auto">
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -321,7 +328,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -334,7 +341,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -347,7 +354,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -360,7 +367,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -373,7 +380,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -386,7 +393,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -399,7 +406,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -412,7 +419,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -425,7 +432,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -438,7 +445,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -451,7 +458,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -464,7 +471,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -477,7 +484,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -490,7 +497,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -503,7 +510,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -516,7 +523,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -529,7 +536,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -542,7 +549,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
@@ -555,7 +562,7 @@
         </div>
 
         <div class="catalog_item">
-          <a href="">
+          <a href="productView.html">
             <div class="imgBx">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/70%27s_Fender_Jazz_Bass.png" alt="images">
             </div>
