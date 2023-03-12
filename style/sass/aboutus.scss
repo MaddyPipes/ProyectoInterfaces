@@ -1,0 +1,28 @@
+body {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  img {
+    max-width: 400px;
+    max-height: 200px;
+    margin: 10px;
+  }
+
+  .card img {
+    max-width: 200px;
+  }
+
+  .card {
+    max-width: 220px;
+  }
+
+
+  .contenedor:hover .imagen {
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+  }
+
+  .contenedor {
+    overflow: hidden;
+  }
