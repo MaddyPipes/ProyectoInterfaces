@@ -1,0 +1,65 @@
+
+  
+// the outer wrapper for each faq question and answer
+details
+  margin: 2rem auto
+  width: 75% // controls the width of the outer wrapper
+ 
+  // styles for the answer that is revealed on click
+  p
+    padding: 2rem 5rem
+    line-height: 2
+    font-size: .9rem
+    text-align: left
+    
+// controls the question part that is to be clicked
+summary
+  display: block // required to remove default triangles in Firefox
+ 
+  // hides the default triangle before the summary
+  &::-webkit-details-marker
+    display: none
+  
+  // replace the default triangle with a new symbol
+  &:before
+    display: inline-block // allows rotating the pseudo element
+    content: '\203A'
+    margin-right: .5rem
+    font-weight: bold
+    font-size: 1rem
+    transition: all 300ms ease // creates animation for rotating marker
+  
+  // makes element look like a clickable link on hover
+  &:hover
+    cursor: pointer
+  
+  
+// controls when the details wrapper is in the open, or clicked, state
+details[open]
+  
+  // change question styles
+  summary
+    color: red // change question color to red
+    transition: all 300ms ease // eases the color transition
+    
+  p
+    animation: openDetail 400ms ease // applies animation to answer that is being revealed
+    background: #f9f9f9 // preserves background color on open
+    
+  summary::before
+    transform: rotate(90deg) // rotates the arrow before the question
+    
+ 
+// animation for the click event
+// animated properties: opacity, background, Y position
+@keyframes openDetail
+  0%
+    opacity: 0
+    background: white
+    transform: translateY(0%)
+  50%
+    transform: translateY(3%) // half way through, provides a little bounce
+  100%
+    opacity: 1
+    background: #f9f9f9
+    transform: translateY(0%) // brings the element back to 0, finishing the bounce effect
